@@ -1,4 +1,4 @@
-const tagEl = document.getElementById("tags");
+const tagsEl = document.getElementById("tags");
 const textarea = document.getElementById("textarea");
 
 textarea.focus();
@@ -19,5 +19,6 @@ function createTags(input) {
     const tagEl = document.createElement("span");
     tagEl.classList.add("tag");
     tagEl.innerText = tag;
+    tagsEl.appendChild(tagEl);
   });
 }
