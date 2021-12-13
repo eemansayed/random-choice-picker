@@ -30,3 +30,15 @@ function createTags(input) {
     tagsEl.appendChild(tagEl);
   });
 }
+
+function randomSelect() {
+  const times = 30;
+
+  const interval = setInterval(() => {}, 100);
+  const randomTag = pickRandomTag();
+}
+
+function pickRandomTag() {
+  const tags = document.querySelectorAll(".tag");
+  return tags[Math.floor(Math.random()) * tags.length];
+}
